@@ -3,7 +3,10 @@ fn main() {
 	let mut input = Scanner::new(input.lock());
 
 	let runs = input.next::<u8>();
-	for _ in 0..runs { run(&mut input); }
+	for i in 0..runs {
+		run(&mut input);
+		if runs - i > 1 { println!() }
+	}
 }
 
 fn run<R: std::io::BufRead>(input: &mut Scanner<R>) {
@@ -40,7 +43,6 @@ fn run<R: std::io::BufRead>(input: &mut Scanner<R>) {
 	} else {
 		println!("Not Found");
 	}
-	println!()
 }
 
 struct Scanner<R> { source: R, buffer: std::collections::VecDeque<String> }

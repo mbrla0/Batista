@@ -10,7 +10,8 @@ else()
     add_compile_options(-Wall -Wextra -pedantic -Werror)
 endif()
 
-add_executable(a5e2 src/bin/a5e2.cxx)
-add_executable(a6e1 src/bin/a6e1.cxx)
-add_executable(a6e3 src/bin/a6e3.cxx)
+add_executable(a5e2  src/bin/a5e2.cxx)
+add_executable(a6e1  src/bin/a6e1.cxx)
+add_executable(a6e3  src/bin/a6e3.cxx)
+add_executable(e2q4  src/bin/e2q4.cxx)
 
